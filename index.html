@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Tokuma's Portfolio</title>
+        <link rel="stylesheet" href="./css/sanitize.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <header>
+                    <h2>Tokuma's Portfolio</h2>
+                    <div class="grobal-menu-wrapper">
+                        <ul class="grobal-menu">
+                            <li><a href="#subject">トップ</a></li>
+                            <li><a href="#subject">自己紹介</a></li>
+                            <li><a href="#skill">スキル</a></li>
+                            <li><a href="#contact">連絡先</a></li>
+                            <li><a href="#form">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                </header>
+                
+                <div class="infomations">
+                    <section class="information subject" id="subject">
+                        <h2 class="header2-subject">自己紹介</h2>
+                        <div class="self-contents">
+                            <img src="./img/mail.png" alt="森岡徳馬の顔">
+                            <p>
+                               愛知県豊田市在住のデスクトップアプリエンジニア<br>
+                               最近はHTML/CSSなどのWeb系技術を勉強中<br>
+                               趣味はアニメ鑑賞で、好きな食べ物はミカン<br>
+                               最後に...友達絶賛募集中！！！
+                            </p>
+                        </div>
+                    </section>
+        
+                    <section class="information skill" id="skill">
+                        <h2 class="header2-subject">スキル</h2>
+                        <div class="skill-contents">
+                            <div class="skill-description-container">
+                                <p>HTML/CSS、Javascriptを駆使したWEBサイト制作をすることが出来ます!</p>
+                            </div>
+                            <div class="skill-content-container">
+                                <div class="skill-content">
+                                    <img src="./img/html.png" alt="HTMLの画像">
+                                </div>
+                                <div class="skill-content">
+                                    <img src="./img/css.png" alt="CSSの画像">
+                                </div>
+                                <div class="skill-content">
+                                    <img src="./img/javascript.png" alt="Javascriptの画像">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="information contact" id="contact">
+                        <h2 class="header2-subject">連絡先</h2>
+                        <div class="infomation-contents">
+                            <div class="infomation-phonenumber">
+                                <img src="./img/phone.png" alt="電話番号">
+                                <p>電話番号<br>
+                                   080(2043)7552</p>
+                            </div>
+                            <div class="infomation-mailaddress">
+                                <img src="./img/mail.png" alt="メールアドレス">
+                                <p>メールアドレス<br>
+                                   tokuma.business@gmail.com</p>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <section class="information form" id="form">
+                        <h2 class="header2-subject">お問い合わせ</h2>
+                        <form>
+                            <div class="element">
+                                <label for="name">お名前 : </label>
+                                <input id="name" type="text">
+                            </div>
+                            <div class="element">
+                                <label for="mail">メールアドレス : </label>
+                                <input id="mail" type="email">
+                            </div>
+                            <div class="element">
+                                <label for="call-content">お問い合わせ内容 : </label>
+                                <textarea id="call-content" maxlength="1000"></textarea>
+                            </div>
+                            <div class="element">
+                                <button type="submit">送信</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+            <footer>
+                <h2>
+                    &copy;森岡徳馬
+                </h2>
+            </footer>
+        </div>
+    </body>
+</html>

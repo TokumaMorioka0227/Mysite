@@ -1,0 +1,220 @@
+/* 全体メモ ここから */
+/* 画像はレスポンシブ画像にしたい */
+/* 単位に気を付ける(px以外にすること) */
+/* スマホ(375px)はハンバーガーメニュー */
+/* ハンバーガーメニューは固定にしたい */
+/* ロゴヘッダー(95%) + ハンバーガーメニュー(5%) */
+/* 画像をトリミングして統一 */
+/* スマホ＆タブレットはコンテナの幅100% */
+/* 基本的に、セクションは縦長にすること */
+/* 画像の下に説明を入れる形が分かりやすそう */
+/* もう少しおしゃれなWebフォントにする？ */
+/* 太字や白抜き字も考慮に入れる */
+/* 実績セクションを設ける */
+/* 来歴セクションを設ける */
+/* よくある質問セクションを設ける */
+/* SNSセクションを設ける(Twitter, Github) */
+/* 全体メモ ここまで */
+
+/* 共通CSS ここから*/
+body {
+    margin-top: 63px;
+    background-image:radial-gradient(rgb(191, 194, 243) 30%, transparent 30%);
+    background-size: 10px 10px;
+}
+
+.information {
+    padding: 10px;
+    padding-top: 63px;
+    margin-top: -63px;
+    border-bottom: 1px solid rgb(99, 99, 99);
+}
+
+.header2-subject {
+    margin-left: 10px;
+}
+
+/* 共通CSS ここまで*/
+
+/* コンテナー */
+.container {
+    margin: 0 auto;
+    width: 70%;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
+    background-color: #fff;
+}
+
+/* ヘッダー */
+.container header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header h2 {
+    margin: 0;
+    background-color: rgb(204, 200, 255);
+    text-align: center;
+    padding: 3px 0;
+    font-size: 20px;
+    font-family: "Helvetica Neue";
+}
+
+.grobal-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.grobal-menu li {
+    background-color:rgb(0, 0, 0);
+    width: 20%;
+    text-align: center;
+}
+
+.grobal-menu li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(209, 209, 209);
+}
+
+/* コンテンツ */
+/* 自己紹介 */
+.self-contents {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.self-contents img {
+    width: 30%;
+    display: block;
+}
+
+.self-contents p {
+    margin: 0;
+    line-height: 70px;
+    font-size: 20px;
+}
+
+/* スキル */
+.skill-contents {
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-content-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill p {
+    padding-left: 70px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+/* 連絡先 */
+.infomation-contents {
+    display: flex;
+    justify-content: center;
+    column-gap: 175px;  /* calc関数で可変にしたい */
+    margin-bottom: 10px;
+}
+
+.infomation-phonenumber img {
+    width: 100%;
+    height: 256px;
+    display: block;
+}
+
+.infomation-phonenumber p {
+    text-align: center;
+    margin: 16px 0 0 0;
+    font-size: 20px;
+}
+
+.infomation-mailaddress img {
+    width: 100%;
+    height: 256px;
+    display: block;
+}
+
+.infomation-mailaddress p {
+    text-align: center;
+    margin: 16px 0 0 0;
+    font-size: 20px;
+}
+
+/* お問い合わせ */
+.form {
+    border-bottom: none;
+    padding-bottom: 30px;
+}
+
+.form form {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.element {
+    display: inline-flex;
+    flex-direction: column;
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+.element input {
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.element textarea {
+    border-radius: 7px;
+    resize: none;
+    height: 300px;
+    overflow: hidden;
+}
+
+.element button {
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 22px;
+    font-size: 20px;
+}
+
+/* フッター */
+footer h2 {
+    margin: 0;
+    padding-top: 2px;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+    background-color: rgb(204, 200, 255);
+}
+
+/* レスポンシブ対応 */
+@media only screen and (max-width: 375px) {
+    header {
+        position:static;
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .self-contents {
+        display: block;
+    }
+
+    .skill-content-container {
+        display: block;
+    }
+}
